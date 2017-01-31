@@ -1,8 +1,12 @@
+var tracker = 1;
+
+
 //user interface logic
 $(document).ready(function() {
-var tracker = 1;
+
   //this fires when ANY answer is clicked
-  $(".answers-" + tracker).click(function(event) {
+
+  $("div[class^='answers']").click(function(event) {
     event.preventDefault();
     var approvalRating = $(event.target).attr('data-name');
     var answerShow = this.id + "-show";
@@ -16,7 +20,6 @@ var tracker = 1;
     tracker += 1;
     console.log(tracker);
     $(".frame"+tracker+"-answers").show();
-
 
   });
 });
