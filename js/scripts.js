@@ -1,0 +1,22 @@
+//user interface logic
+$(document).ready(function() {
+var tracker = 1;
+  //this fires when ANY answer is clicked
+  $(".answers-" + tracker).click(function(event) {
+    event.preventDefault();
+    var approvalRating = $(event.target).attr('data-name');
+    var answerShow = this.id + "-show";
+    var questionSelector = window[approvalRating];
+    console.log(approvalRating);
+    console.log(answerShow);
+    console.log(this.id);
+    $("#" + answerShow).show();
+    $(".frame"+tracker+"-answers").hide();
+    console.log(tracker);
+    tracker += 1;
+    console.log(tracker);
+    $(".frame"+tracker+"-answers").show();
+
+
+  });
+});

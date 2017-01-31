@@ -3,19 +3,56 @@
   <head>
     <title>Hot Dog Dating</title>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/scripts.css" media="screen" title="no title" charset="utf-8">
-    <script href="js/jquery.3-1-1.js" type="text/javascript"></script>
-    <script href="js/scripts.js"type="text/javascript"></script>
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/scripts.js"type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
-      <div id="the-div-to-rule-them-all">
-        <!-- form frame 1  -->
+        <div class="frame1-answers">
+          <div class="answers-1" id="frame1-positive" data-name="frame1-positve">
+            You look nice this evening
+          </div>
+          <br>
+          <div class="answers-1" id="frame1-neutral" data-name="frame1-neutral">
+            This weather, huh...
+          </div>
+          <br>
+          <div class="answers-1" id="frame1-negative" data-name="frame1-negative">
+            Jesus christ! What happened to your arms!?
+          </div>
+          <br>
+        </div>
+
+      <div class="frame1-feedback">
+        <p id="frame1-positive-show" class="noshow" data-name="frame1-positive-show">Thanks! I just got this sweater.</p>
+        <p id="frame1-neutral-show" class="noshow" data-name="frame1-neutral-show">Yeah, it has been warm...</p>
+        <p id="frame1-negative-show" class="noshow" data-name="frame1-negative-show">That's a sensitive... subject...</p>
+      </div>
+
+      <div class="frame2-answers noshow">
+        <div class="answers-2" id="frame1-positive" data-name="frame1-positve">
+          test
+        </div>
+        <br>
+        <div class="answers-2" id="frame1-neutral" data-name="frame1-neutral">
+          test
+        </div>
+        <br>
+        <div class="answers-2" id="frame1-negative" data-name="frame1-negative">
+          test
+        </div>
+        <br>
+      </div>
+    </div>
+
+      <!-- <div id="the-div-to-rule-them-all">
+        form frame 1
         <form id="introduction">
-          <!-- This is frame 1 questions-->
+          This is frame 1 questions
           <div class="frame1-questions">
             <label>
-              <input type="radio" name="frame1" value="positive">
+              <input type="radio" name="frame1" value="positive" id="frame1-positive">
               You look nice this evening
             </label>
             <br>
@@ -29,19 +66,19 @@
               Jesus christ! What happened to your arms!?
             </label>
           </div>
-          <!-- This is frame 1 answers-->
+          This is frame 1 answers
+          <button type="submit" name="button">Next Question</button>
           <div class="frame1-answers">
-            <p id="frame1-positive">Thanks! I just got this sweater.</p>
+            <p id="frame1-positive-response">Thanks! I just got this sweater.</p>
             <p id="frame1-neutral">Yeah, it has been warm...</p>
             <p id="frame1-negative">That's a sensitive... subject...</p>
           </div>
-          <button type="submit" name="button">Next Question</button>
-        </form>
+        </form> -->
 
         <!-- form frame 2 -->
-        <form id="career">
+        <!-- <form id="career"> -->
           <!-- This is frame 2 questions-->
-          <div class="frame2-questions">
+          <!-- <div class="frame2-questions">
             <label>
               <input type="radio" name="frame2" value="positive">
               You are so unique. You must have a really interesting career.
@@ -56,20 +93,20 @@
               <input type="radio" name="frame2" value="negative">
               So.... Is it difficult to find work like that?
             </label>
-          </div>
+          </div> -->
           <!-- This is frame 2 answers-->
-          <div class="frame2-answers">
+          <!-- <div class="frame2-answers">
             <p id="frame2-positive">I work as a veterinarian, but my true passion is volunteering my time to blind children learning to oil paint.</p>
             <p id="frame2-neutral">I work my family business.</p>
             <p id="frame2-negative">No, I get by just fine.</p>
           </div>
           <button type="submit" name="button">Next Question</button>
-        </form>
+        </form> -->
 
         <!-- form frame 3 -->
-        <form id="free-time">
+        <!-- <form id="free-time"> -->
           <!-- This is frame 3 questions-->
-          <div class="frame3-questions">
+          <!-- <div class="frame3-questions">
             <label>
               <input type="radio" name="frame3" value="positive">
               You sound like a really busy individual. How do you find the time to date?
@@ -85,19 +122,19 @@
               So, ketchup or mustard?
             </label>
           </div>
-          <!-- This is frame 3 answers-->
-          <div class="frame3-answers">
+          This is frame 3 answers
+           <div class="frame3-answers">
             <p id="frame3-positive">You cant let life pass you by. You have to relish in every opportunity. Life is too short to to let oppurnities pass their expiration date.</p>
             <p id="frame3-neutral">Portland bread and engineered.</p>
             <p id="frame3-negative">I dont feel comfortable answering that. It's a little personal.</p>
           </div>
           <button type="submit" name="button">Next Question</button>
-        </form>
+        </form> -->
 
         <!-- form frame 4 -->
-        <form id="family">
+        <!-- <form id="family"> -->
           <!-- This is frame 4 questions-->
-          <div class="frame4-questions">
+          <!-- <div class="frame4-questions">
             <label>
               <input type="radio" name="frame4" value="positive">
               What are you looking for in a partner?
@@ -112,21 +149,21 @@
               <input type="radio" name="frame4" value="negative">
               So, ketchup or mustard?
             </label>
-          </div>
+          </div> -->
           <!-- This is frame 4 answers-->
-          <div class="frame4-answers">
+          <!-- <div class="frame4-answers">
             <p id="frame4-positive">I'm just searching for the other half of me...you know...the yin to my yang, the peanut butter to my jelly, the ketchup to my mustard, the bun to my hot dog . . .ya know.</p>
             <p id="frame4-neutral">There are 10 of us in total but we're kind of a packaged deal.</p>
             <p id="frame4-negative">Um, I think you should slow down.</p>
           </div>
           <button type="submit" name="button">Next Question</button>
-        </form>
+        </form> -->
 
         <!-- form frame 5 -->
-        <form id="finale">
+        <!-- <form id="finale"> -->
           <!-- This is frame 5 questions-->
-          <div class="frame5-questions">
-            <label>
+          <!-- <div class="frame5-questions"> -->
+            <!-- <label>
               <input type="radio" name="frame5" value="positive">
               Do you want to get out of here and get to know each other better?
             </label>
@@ -140,16 +177,16 @@
               <input type="radio" name="frame5" value="negative">
               So can we just agree you're a hot dog with some googly eyes?
             </label>
-          </div>
+          </div> -->
           <!-- This is frame 5 answers-->
-          <div class="frame5-answers">
+          <!-- <div class="frame5-answers">
             <p id="frame5-positive">Yeah! I brought condiments...</p>
             <p id="frame5-neutral">Sounds like a plan, I'll call you.</p>
             <p id="frame5-negative">Can we agree this date is over?</p>
           </div>
           <button type="submit" name="button">End Date</button>
         </form>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
