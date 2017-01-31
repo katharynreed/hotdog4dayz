@@ -1,6 +1,6 @@
+var tracker = 1;
 //user interface logic
 $(document).ready(function() {
-var tracker = 1;
   //this fires when ANY answer is clicked
   $(".answers-" + tracker).click(function(event) {
     event.preventDefault();
