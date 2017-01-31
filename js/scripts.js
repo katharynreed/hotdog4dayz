@@ -1,6 +1,5 @@
 var tracker = 1;
 
-
 //user interface logic
 $(document).ready(function() {
 
