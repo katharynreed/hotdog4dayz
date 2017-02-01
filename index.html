@@ -8,6 +8,7 @@
     <script src="js/scripts.js"type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Barrio|Dancing+Script|IM+Fell+Double+Pica" rel="stylesheet">
   </head>
+
   <body>
     <div class="container">
       <form id="form-name">
@@ -15,116 +16,179 @@
           <input id="name" type="text" name="name">
           <button type="submit" class="btn">Submit</button>
       </form>
+
       <!-- This is the img -->
       <img id="hot-dog-gif" src="img/hotdawg.gif" alt="a gif of a 'man' that you are on a date with">
+
       <!-- This is the beginning of CHOICE-BOX -->
       <div class="choice-box">
         <h3>Click on a question to ask your date</h3>
         <hr>
-
-        <!-- frame1 -->
-        <div class="frame1-answers">
-          <div class="answers-1" id="frame1-positive" data-name="frame1-positive">
-            "You look nice this evening."
-          </div>
-          <div class="answers-1" id="frame1-neutral" data-name="frame1-neutral">
-            "This weather, huh..."
-          </div>
-          <div class="answers-1" id="frame1-negative" data-name="frame1-negative">
-            "Jesus christ! What happened to your arms!?"
-          </div>
+      <!-- frame1 -->
+      <div class="frame1-answers">
+        <div class="answers-1" id="frame1-positive" data-name="frame1-positive">
+          It's nice to meet you! What's your name?
         </div>
-
-        <!-- frame2 -->
-        <div class="frame2-answers noshow">
-          <div class="answers-2" id="frame2-positive" data-name="frame2-positive">
-            "You are so unique. You must have a really interesting career."
-          </div>
-          <div class="answers-2" id="frame2-neutral" data-name="frame2-neutral">
-            "So, what do you do for a living?"
-          </div>
-          <div class="answers-2" id="frame2-negative" data-name="frame2-negative">
-            "So... Is it difficult to find work like that?"
-          </div>
+        <br>
+        <div class="answers-1" id="frame1-neutral" data-name="frame1-neutral">
+          Um, hi...are you here on a date?
         </div>
-
-        <!-- frame 3  -->
-        <div class="frame3-answers noshow">
-          <div class="answers-3" id="frame3-positive" data-name="frame3-positive">
-            "You sound like a really busy individual. How do you find the time to date?"
-          </div>
-          <div class="answers-3" id="frame3-neutral" data-name="frame3-neutral">
-            "Are you from around here?"
-          </div>
-          <div class="answers-3" id="frame3-negative" data-name="frame3-negative">
-            "So, ketchup or mustard?"
-          </div>
+        <br>
+        <div class="answers-1" id="frame1-negative" data-name="frame1-negative">
+          Ew! Something smells like hot dog water...
         </div>
-
-        <!-- frame4 -->
-        <div class="frame4-answers noshow">
-          <div class="answers-4" id="frame4-positive" data-name="frame4-positive">
-            "What are you looking for in a partner?"
-          </div>
-          <div class="answers-4" id="frame4-neutral" data-name="frame4-neutral">
-            "So, do you have a big family..?"
-          </div>
-          <div class="answers-4" id="frame4-negative" data-name="frame4-negative">
-            "Okay, but for real. Relish or sauerkraut? Both? Neither?"
-          </div>
-        </div>
-
-        <!-- frame 5 -->
-        <div class="frame5-answers noshow">
-          <div class="answers-5" id="frame5-positive" data-name="frame5-positive">
-            "Do you want to get out of here and get to know each other better?"
-          </div>
-          <div class="answers-5" id="frame5-neutral" data-name="frame5-neutral">
-            "Well, this has been an interesting date. We should keep in touch."
-          </div>
-          <div class="answers-5" id="frame5-negative" data-name="frame5-negative">
-            "So can we just agree you're a hot dog with some googly eyes?"
-          </div>
-        </div>
-        <!--  THIS IS THE END OF CHOICE-BOX  -->
+        <br>
       </div>
-      <!--This is the beginning of FEEDBACK -->
-      <div class="feed-box">
-        <!-- frame1 feedback -->
-        <div class="frame1-feedback">
-          <p id="frame1-positive-show" class="noshow" data-name="frame1-positive-show">Thanks! I just got this sweater.</p>
-          <p id="frame1-neutral-show" class="noshow" data-name="frame1-neutral-show">Yeah, it's been warm. I've been practically roasting.</p>
-          <p id="frame1-negative-show" class="noshow" data-name="frame1-negative-show">That's a sensitive... subject...</p>
-        </div>
 
-        <!-- frame2 feedback -->
-        <div class="frame2-feedback">
-          <p id="frame2-positive-show" class="noshow" data-name="frame2-positive-show">I work as a veterinarian, but my true passion is volunteering my time to blind children learning to oil paint.</p>
-          <p id="frame2-neutral-show" class="noshow" data-name="frame2-neutral-show">I'm in the family business.</p>
-          <p id="frame2-negative-show" class="noshow" data-name="frame2-negative-show">No, I get by just fine.</p>
+      <!-- frame2 -->
+      <div class="frame2-answers noshow">
+        <div class="answers-2" id="frame2-positive" data-name="frame2-positive">
+          You look nice this evening
         </div>
-
-        <!-- frame3 feedback -->
-        <div class="frame3-feedback">
-          <p id="frame3-positive-show" class="noshow" data-name="frame3-positive-show">You cant let life pass you by. You have to relish in every opportunity. Life is too short to to let oppurnities pass their expiration date.</p>
-          <p id="frame3-neutral-show" class="noshow" data-name="frame3-neutral-show">Portland bread and engineered.</p>
-          <p id="frame3-negative-show" class="noshow" data-name="frame3-negative-show">I dont feel comfortable answering that. It's a little personal.</p>
+        <br>
+        <div class="answers-2" id="frame2-neutral" data-name="frame2-neutral">
+          This weather, huh...
         </div>
-
-        <!-- frame4 feedback -->
-        <div class="frame4-feedback">
-          <p id="frame4-positive-show" class="noshow" data-name="frame4-positive-show">I'm just searching for the other half of me...you know...the yin to my yang, the peanut butter to my jelly, the ketchup to my mustard, the bun to my hot dog . . .ya know.</p>
-          <p id="frame4-neutral-show" class="noshow" data-name="frame4-neutral-show">There are 10 of us in total but we're kind of a packaged deal.</p>
-          <p id="frame4-negative-show" class="noshow" data-name="frame4-negative-show">Um, I think you should slow down.</p>
+        <br>
+        <div class="answers-2" id="frame2-negative" data-name="frame2-negative">
+          Jesus christ! What happened to your arms!?
         </div>
-        <!-- frame5 feedback -->
-        <div class="frame5-feedback">
-          <p id="frame5-positive-show" class="noshow" data-name="frame5-positive-show">Yeah! I brought condiments...</p>
-          <p id="frame5-neutral-show" class="noshow" data-name="frame5-neutral-show">Sounds like a plan, I'll call you (maybe).</p>
-          <p id="frame5-negative-show" class="noshow" data-name="frame5-negative-show">Can we agree this date is over?</p>
-        </div>
-        <!--This is the end of FEEDBACK -->
+        <br>
       </div>
+
+      <!-- frame3 -->
+      <div class="frame3-answers noshow">
+        <div class="answers-3" id="frame3-positive" data-name="frame3-positive">
+          You are so unique. You must have a really interesting career.
+        </div>
+        <br>
+        <div class="answers-3" id="frame3-neutral" data-name="frame3-neutral">
+          So, what do you do for a living?
+        </div>
+        <br>
+        <div class="answers-3" id="frame3-negative" data-name="frame3-negative">
+          So... Is it difficult to find work like that?
+        </div>
+        <br>
+      </div>
+
+      <!-- frame 4  -->
+      <div class="frame3-answers noshow">
+        <div class="answers-3" id="frame3-positive" data-name="frame3-positive">
+          "You sound like a really busy individual. How do you find the time to date?"
+        </div>
+        <div class="answers-3" id="frame3-neutral" data-name="frame3-neutral">
+          "Are you from around here?"
+        </div>
+        <div class="answers-3" id="frame3-negative" data-name="frame3-negative">
+          "So, ketchup or mustard?"
+        </div>
+      </div>
+
+      <!-- frame 5 -->
+      <div class="frame5-answers noshow">
+        <div class="answers-5" id="frame5-positive" data-name="frame5-positive">
+          How do you feel about EDM?
+        </div>
+        <br>
+        <div class="answers-5" id="frame5-neutral" data-name="frame5-neutral">
+          What's your favorite song?
+        </div>
+        <br>
+        <div class="answers-5" id="frame5-negative" data-name="frame5-negative">
+          Hey, what if this bread had legs?....Then it wouldn't loaf around so much ;)
+        </div>
+      </div>
+
+      <!-- frame6 -->
+      <div class="frame6-answers noshow">
+        <div class="answers-6" id="frame6-positive" data-name="frame6-positive">
+            What are you looking for in a partner?
+        </div>
+        <br>
+        <div class="answers-6" id="frame6-neutral" data-name="frame6-neutral">
+          "So, do you have a big family..?
+        </div>
+        <br>
+        <div class="answers-6" id="frame6-negative" data-name="frame6-negative">
+          Okay, but for real. Relish or sauerkraut? Both? Neither?
+        </div>
+        <br>
+      </div>
+
+    <!-- frame 7 -->
+      <div class="frame7-answers noshow">
+        <div class="answers-7" id="frame7-positive" data-name="frame7-positive">
+          Do you want to get out of here and get to know each other better?
+        </div>
+        <br>
+        <div class="answers-7" id="frame7-neutral" data-name="frame7-neutral">
+          Well, this has been an interesting date. We should keep in touch.
+        </div>
+        <br>
+        <div class="answers-7" id="frame7-negative" data-name="frame7-negative">
+          So can we just agree you're a hot dog with some googly eyes?
+        </div>
+        <br>
+      </div>
+
+    </div>
+<!--  THIS IS THE END OF CHOICE-BOX  -->
+
+<!--This is the beginning of FEEDBACK -->
+    <div class="feed-box">
+
+      <!-- frame1 feedback -->
+      <div class="frame1-feedback">
+        <p id="frame1-positive-show" class="noshow" data-name="frame1-positive-show">Hi, <span id=""></span>I'm Brat Wurst, nice to meet you too!</p>
+        <p id="frame1-neutral-show" class="noshow" data-name="frame1-neutral-show">Yep, I'm mustlovedogz. You must be my date?.</p>
+        <p id="frame1-negative-show" class="noshow" data-name="frame1-negative-show">Err, well, I didn't smell it till you got here...</p>
+      </div>
+
+      <!-- frame2 feedback -->
+      <div class="frame2-feedback">
+        <p id="frame2-positive-show" class="noshow" data-name="frame2-positive-show">Thanks! I just got this sweater.</p>
+        <p id="frame2-neutral-show" class="noshow" data-name="frame2-neutral-show">Yeah, it's been warm. I've been practically roasting.</p>
+        <p id="frame2-negative-show" class="noshow" data-name="frame2-negative-show">That's a sensitive... subject...</p>
+      </div>
+
+      <!-- frame3 feedback -->
+      <div class="frame3-feedback">
+        <p id="frame3-positive-show" class="noshow" data-name="frame3-positive-show">I work as a veterinarian, but my true passion is volunteering my time to blind children learning to oil paint.</p>
+        <p id="frame3-neutral-show" class="noshow" data-name="frame3-neutral-show">I'm in the family business.</p>
+        <p id="frame3-negative-show" class="noshow" data-name="frame3-negative-show">No, I get by just fine.</p>
+      </div>
+
+      <!-- frame4 feedback -->
+      <div class="frame4-feedback">
+        <p id="frame4-positive-show" class="noshow" data-name="frame4-positive-show">You cant let life pass you by. You have to relish in every opportunity. Life is too short to to let oppurnities pass their expiration date.</p>
+        <p id="frame4-neutral-show" class="noshow" data-name="frame4-neutral-show">Portland bread and engineered.</p>
+        <p id="frame4-negative-show" class="noshow" data-name="frame4-negative-show">I dont feel comfortable answering that. It's a little personal.</p>
+      </div>
+
+      <!-- frame5 feedback -->
+      <div class="frame5-feedback">
+        <p id="frame5-positive-show" class="noshow" data-name="frame5-positive-show">Oh, you mean Extra Dijon Mustard? I LOVE it!</p>
+        <p id="frame5-neutral-show" class="noshow" data-name="frame5-neutral-show">Have you heard "Hot Dog" by Elvis? It really gets my water boiling!</p>
+        <p id="frame5-negative-show" class="noshow" data-name="frame5-negative-show">This is awkward...Kosher laws don't allow me to mix jokes with dinner.</p>
+      </div>
+
+      <!-- frame6 feedback -->
+      <div class="frame6-feedback">
+        <p id="frame6-positive-show" class="noshow" data-name="frame6-positive-show">I'm just searching for the other half of me...you know...the yin to my yang, the peanut butter to my jelly, the ketchup to my mustard, the bun to my hot dog . . .ya know.</p>
+        <p id="frame6-neutral-show" class="noshow" data-name="frame6-neutral-show">There are 10 of us in total but we're kind of a packaged deal.</p>
+        <p id="frame6-negative-show" class="noshow" data-name="frame6-negative-show">Um, I think you should slow down.</p>
+      </div>
+
+      <!-- frame7 feedback -->
+        <div class="frame7-feedback">
+          <p id="frame7-positive-show" class="noshow" data-name="frame7-positive-show">Yeah! I brought condiments...</p>
+          <p id="frame7-neutral-show" class="noshow" data-name="frame7-neutral-show">Sounds like a plan, I'll call you (maybe).</p>
+          <p id="frame7-negative-show" class="noshow" data-name="frame7-negative-show">Can we agree this date is over?</p>
+        </div>
+      <!--This is the end of FEEDBACK -->
+      </div>
+
       <!--These are the endings -->
       <div class="end-results">
         <h1 class="noshow" id="blink">THE END</h1>
