@@ -127,10 +127,16 @@
       </div>
       <!--These are the endings -->
       <div class="end-results">
+        <h1 class="noshow" id="blink">THE END</h1>
         <p class="noshow" id="end-positive-show">Hey <span id="name-display1"></span>, Love is blind, and so (apparently) are you. You just went on a date with a hotdog. You should probably consider a pet or converting to a vegan lifestyle.</p>
         <p class="noshow" id="end-neutral-show">Hey <span id="name-display2"></span>, you just came dangerously close to dating a hot dog. You should really get out more.</p>
         <p class="noshow" id="end-negative-show">Hey <span id="name-display3"></span>, good job you dodged the dog!</p>
       </div>
+
+      <form id="restart" action="index.html" method="post">
+        <input class="btn" type="reset" value="Restart" onClick="window.location.reload()">
+      </form>
+
     </div>
   </body>
 </html>
