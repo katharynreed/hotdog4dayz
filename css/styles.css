@@ -2,6 +2,13 @@
   display: none;
 }
 
+body {
+  background-color: black;
+}
+
+#hot-dog-gif {
+  width: 100%;
+}
 
 /*font-family: 'Barrio', cursive;
 font-family: 'IM Fell Double Pica', serif;
