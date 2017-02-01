@@ -39,6 +39,7 @@ $(document).ready(function() {
     newPlayer.name = inputtedName;
     $("#form-name").hide();
     $("#hot-dog-gif").show();
+    $(".choice-box").show();
   });
 
   $("div[class^='answers']").click(function(event) {

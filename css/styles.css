@@ -9,8 +9,12 @@ body {
   color: #fff;
 }
 
+.choice-box {
+  display: none;
+}
+
 img {
-  /*display: none;*/
+  display: none;
 }
 /* these are text boxes*/
 
