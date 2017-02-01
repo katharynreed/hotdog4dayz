@@ -7,6 +7,7 @@ function Player(name, score) {
 };
 
 
+<<<<<<< HEAD
   Player.prototype.accrue = function() {
     if (tracker >= 5) {
       if (this.score >= 2) {
@@ -18,12 +19,27 @@ function Player(name, score) {
       }
   };
 };
+=======
+  Player.prototype.accrue = function(score) {
+    if (score < 0) {
+      $("p#end-negative-show").show();
+    } else if (score < 2 && score >= 0) {
+      $("p#end-neutral-show").show();
+    } else {
+      $("p#end-positive-show").show();
+    }
+  };
+>>>>>>> master
 
 
 //user interface logic
 $(document).ready(function() {
   //this fires when ANY answer is clicked
   score = 0;
+<<<<<<< HEAD
+=======
+  var newPlayer = new Player(name, score);
+>>>>>>> master
 
   $("div[class^='answers']").click(function(event) {
     event.preventDefault();
@@ -43,13 +59,23 @@ $(document).ready(function() {
     // console.log(answerShow);
     // console.log(this.id);
     $("#" + answerShow).show();
+<<<<<<< HEAD
     $("#" + answerShow).fadeOut(5000);
+=======
+>>>>>>> master
     $(".frame"+tracker+"-answers").hide();
     // console.log(tracker);
     tracker += 1;
     // console.log(tracker);
     $(".frame"+tracker+"-answers").show();
+<<<<<<< HEAD
   });
   var newPlayer = new Player(name, score);
   var playerScore = newPlayer.accrue();
+=======
+    if (tracker >= 6) {
+      var playerScore = newPlayer.accrue(score);
+    }
+  });
+>>>>>>> master
 });
