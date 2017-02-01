@@ -34,6 +34,7 @@ $(document).ready(function() {
     $("#form-name").hide();
 
     newPlayer.name = inputtedName;
+    $("#form-name").hide();
   });
 
   $("div[class^='answers']").click(function(event) {
@@ -61,11 +62,6 @@ $(document).ready(function() {
 
     if (tracker >= 6) {
       var playerScore = newPlayer.accrue(score);
-      // $("#name-display").text(newPlayer.name);
-      // $("#name-display2").text(newPlayer.name);
-      // $("#name-display3").text(newPlayer.name);
     }
-
   });
-
 });
