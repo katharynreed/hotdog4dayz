@@ -11,12 +11,15 @@ function Player(name, score) {
     if (score < 0) {
       $("p#end-negative-show").show();
       $("#name-display3").text(newPlayer.name);
+      $("#blink").show();
     } else if (score < 2 && score >= 0) {
       $("p#end-neutral-show").show();
       $("#name-display2").text(newPlayer.name);
+      $("#blink").show();
     } else {
       $("p#end-positive-show").show();
       $("#name-display1").text(newPlayer.name);
+      $("#blink").show();
     }
   };
 
@@ -35,6 +38,7 @@ $(document).ready(function() {
 
     newPlayer.name = inputtedName;
     $("#form-name").hide();
+    $("#hot-dog-gif").show();
   });
 
   $("div[class^='answers']").click(function(event) {
@@ -62,6 +66,10 @@ $(document).ready(function() {
 
     if (tracker >= 8) {
       var playerScore = newPlayer.accrue(score);
+      $("#hot-dog-gif").hide();
+      $(".choice-box").hide();
+      $("#restart").show();
+
     }
   });
 });
