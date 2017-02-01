@@ -18,6 +18,10 @@ img {
 }
 /* these are text boxes*/
 
+.end-results {
+  font-family: 'Dancing Script', cursive;
+}
+
 .choice-box {
   font-size: 14px;
   color: white;
@@ -98,6 +102,12 @@ img {
 #restart {
   display: none;
   text-align: center;
+}
+
+#form-name {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  margin-top: 100px;
 }
 
 

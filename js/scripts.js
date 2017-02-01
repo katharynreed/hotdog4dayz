@@ -8,18 +8,16 @@ function Player(name, score) {
 
 
   Player.prototype.accrue = function(score) {
+    $("#blink").show();
     if (score < 0) {
       $("p#end-negative-show").show();
       $("#name-display3").text(newPlayer.name);
-      $("#blink").show();
     } else if (score < 2 && score >= 0) {
       $("p#end-neutral-show").show();
       $("#name-display2").text(newPlayer.name);
-      $("#blink").show();
     } else {
       $("p#end-positive-show").show();
       $("#name-display1").text(newPlayer.name);
-      $("#blink").show();
     }
   };
 
