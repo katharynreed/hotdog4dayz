@@ -60,7 +60,7 @@ $(document).ready(function() {
     tracker += 1;
     $(".frame"+tracker+"-answers").show();
 
-    if (tracker >= 7) {
+    if (tracker >= 8) {
       var playerScore = newPlayer.accrue(score);
     }
   });
