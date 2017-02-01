@@ -17,13 +17,23 @@ function Player(name, score) {
     }
   };
 
+var newPlayer = new Player(name, score);
 
 //user interface logic
 $(document).ready(function() {
   //this fires when ANY answer is clicked
   score = 0;
 
-  var newPlayer = new Player(name, score);
+
+
+  $("#form-name").submit(function(event) {
+    event.preventDefault();
+    var inputtedName = $("input#name").val();
+    console.log(inputtedName);
+    $("#form-name").hide();
+
+    newPlayer.name = inputtedName;
+  });
 
   $("div[class^='answers']").click(function(event) {
     event.preventDefault();
