@@ -7,23 +7,22 @@ function Player(name, score) {
 };
 
 
-  Player.prototype.accrue = function() {
-    if (tracker >= 5) {
-      if (this.score >= 2) {
-        $("p#end-positive-show").show();
-      } else if (this.score < 2 && this.score >= 0) {
-        $("p#end-neutral-show").show();
-      } else if (this.score < 0) {
-        $("p#end-negative-show").show();
-      }
+  Player.prototype.accrue = function(score) {
+    if (score < 0) {
+      $("p#end-negative-show").show();
+    } else if (score < 2 && score >= 0) {
+      $("p#end-neutral-show").show();
+    } else {
+      $("p#end-positive-show").show();
+    }
   };
-};
 
 
 //user interface logic
 $(document).ready(function() {
   //this fires when ANY answer is clicked
   score = 0;
+  var newPlayer = new Player(name, score);
 
   $("div[class^='answers']").click(function(event) {
     event.preventDefault();
@@ -48,7 +47,8 @@ $(document).ready(function() {
     tracker += 1;
     // console.log(tracker);
     $(".frame"+tracker+"-answers").show();
+    if (tracker >= 6) {
+      var playerScore = newPlayer.accrue(score);
+    }
   });
-  var newPlayer = new Player(name, score);
-  var playerScore = newPlayer.accrue();
 });
