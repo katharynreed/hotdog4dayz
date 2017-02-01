@@ -33,6 +33,7 @@ $(document).ready(function() {
     $("#form-name").hide();
 
     newPlayer.name = inputtedName;
+    $("#form-name").hide();
   });
 
   $("div[class^='answers']").click(function(event) {
