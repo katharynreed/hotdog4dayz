@@ -50,17 +50,13 @@ $(document).ready(function() {
 
     }
     console.log(score);
-    // console.log(answerShow);
-    // console.log(this.id);
     $("#" + answerShow).show();
 
     $("#" + answerShow).fadeOut(5000);
 
 
     $(".frame"+tracker+"-answers").hide();
-    // console.log(tracker);
     tracker += 1;
-    // console.log(tracker);
     $(".frame"+tracker+"-answers").show();
 
   });
