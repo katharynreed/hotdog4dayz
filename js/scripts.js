@@ -54,7 +54,7 @@ $(document).ready(function() {
     console.log(score);
     $("#" + answerShow).show();
 
-    $("#" + answerShow).fadeOut(5000);
+    $("#" + answerShow).fadeOut(7000);
 
     $(".frame"+tracker+"-answers").hide();
     tracker += 1;
