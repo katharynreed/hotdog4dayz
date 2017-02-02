@@ -5,7 +5,7 @@ Hot Dog Dating Simulator, January 30th, 2017
 Authors: Xia Amendolara, Jennifer Beem, Katharyn Reed, Brynna Klamkin-McCarter
 
 ##To View Sample
-https://katharynreed.github.io/wurstdate
+[Gh-pages](https://katharynreed.github.io/wurstdate)
 
 ##Description:
 
@@ -24,7 +24,7 @@ Program will allow user to play again | button | refresh window
 
 ##Setup and Installation Requirements:
 
-* Visit (github)[github.com]
+* Visit [Github](https://github.com/katharynreed/wurstdate)
 * Click on the clone or download button
 * Download the zip (unzip to desktop) or open in desktop
 * Open the folder and double click index.html
