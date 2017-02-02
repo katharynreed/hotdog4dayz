@@ -47,6 +47,10 @@ input {
   font-family: 'Courgette', cursive;
 }
 
+.click:hover {
+  text-decoration: underline;
+}
+
 .noshow {
   display: none;
   text-align: center;
