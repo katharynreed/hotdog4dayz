@@ -51,6 +51,14 @@ input {
   text-decoration: underline;
 }
 
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  display: none;
+  text-align: center;
+  padding-top: 40%;
+}
+
 .cursor {
   cursor: pointer;
 }

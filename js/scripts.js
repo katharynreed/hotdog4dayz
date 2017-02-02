@@ -12,12 +12,15 @@ function Player(name, score) {
     if (score < 0) {
       $("p#end-negative-show").delay(7000).fadeIn(4000);
       $("#name-display3").text(newPlayer.name);
+      $(".footer").delay(7000).fadeIn(4000)
     } else if (score < 2 && score >= 0) {
       $("p#end-neutral-show").delay(7000).fadeIn(4000);
       $("#name-display2").text(newPlayer.name);
+      $(".footer").delay(7000).fadeIn(4000)
     } else {
       $("p#end-positive-show").delay(7000).fadeIn(4000);
       $("#name-display1").text(newPlayer.name);
+      $(".footer").delay(7000).fadeIn(4000)
     }
   };
 
