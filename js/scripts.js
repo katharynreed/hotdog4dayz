@@ -31,12 +31,16 @@ $(document).ready(function() {
   //this fires when ANY answer is clicked
   score = 0;
 
+  $("#song-1").get(0).play();
+
   $("#form-name").submit(function(event) {
     event.preventDefault();
     var inputtedName = $("input#name").val();
     console.log(inputtedName);
     $("#form-name").hide();
     $("#logo").hide();
+    $("#song-1").get(0).pause();
+    $("#song-2").get(0).play();
 
     newPlayer.name = inputtedName;
     $("#form-name").hide();
@@ -49,16 +53,11 @@ $(document).ready(function() {
     var approvalRating = $(event.target).attr('data-name');
     var answerShow = this.id + "-show";
     var questionSelector = window[approvalRating];
-    console.log(approvalRating);
     if (approvalRating === "frame" + tracker + "-positive") {
       score += 1;
-
-      console.log(score);
     } else if (approvalRating === "frame" + tracker + "-negative") {
       score -= 1;
-
     }
-    console.log(score);
     $("#" + answerShow).show();
 
     $("#" + answerShow).fadeOut(7000);
@@ -72,7 +71,8 @@ $(document).ready(function() {
       $("#hot-dog-gif").fadeOut(4000);
       $(".choice-box").hide();
       $("#restart").delay(7000).fadeIn(4000);
-
+      $("#song-2").get(0).pause();
+      $("#song-3").get(0).play();
     }
   });
 });

@@ -11,6 +11,10 @@ body {
   color: #fff;
 }
 
+.container {
+  position: relative;
+}
+
 input {
   color: black;
 }
@@ -84,13 +88,13 @@ input {
 }
 
 
-  #blink {
-    font-family: 'Monoton', cursive;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-name: blink;
-    font-size: 2em;
-    text-align: center;
+#blink {
+  font-family: 'Monoton', cursive;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: blink;
+  font-size: 2em;
+  text-align: center;
 }
 
 @keyframes blink {
