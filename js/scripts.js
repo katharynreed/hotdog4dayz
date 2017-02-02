@@ -60,7 +60,7 @@ $(document).ready(function() {
     }
     $("#" + answerShow).show();
 
-    $("#" + answerShow).fadeOut(7000);
+    $("#" + answerShow).fadeOut(9000);
 
     $(".frame"+tracker+"-answers").hide();
     tracker += 1;

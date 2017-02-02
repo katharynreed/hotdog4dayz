@@ -36,7 +36,7 @@ input {
 }
 
 .feed-box {
-
+  font-size: 32px;
   font-family: 'Homenaje', sans-serif;
   text-shadow: 2px 2px 2px black;
   width: 250px;
