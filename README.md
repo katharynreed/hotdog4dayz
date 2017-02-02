@@ -6,6 +6,9 @@ Hot Dog Dating Simulator, January 30th, 2017
 
 Authors: Xia Amendolara, Jennifer Beem, Katharyn Reed, Brynna Klamkin-McCarter
 
+##To View Sample
+katharynreed.github.io/wurstdate
+
 ##Description:
 
 This program is a game for dating simulator. The user can choose questions to produce 3 different outcomes for the date.
