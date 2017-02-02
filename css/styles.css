@@ -10,7 +10,7 @@ body {
 }
 
 img {
-  display: none;
+
 }
 
 input {
@@ -57,8 +57,13 @@ input {
   text-align: center;
 }
 
+#logo {
+  width: 100%;
+}
+
 #hot-dog-gif {
   width: 100%;
+  display: none;
 }
 
 #blink {
@@ -107,9 +112,12 @@ input {
 }
 
 #form-name {
-  font-family: 'Courgette', cursive;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-top: 100px;
+}
+
+#start-playing{
+  background-color: #FF40B8;
 }
 
 

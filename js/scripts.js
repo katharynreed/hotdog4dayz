@@ -33,6 +33,7 @@ $(document).ready(function() {
     var inputtedName = $("input#name").val();
     console.log(inputtedName);
     $("#form-name").hide();
+    $("#logo").hide();
 
     newPlayer.name = inputtedName;
     $("#form-name").hide();
