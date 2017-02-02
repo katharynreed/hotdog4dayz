@@ -25,7 +25,7 @@ input {
 }
 
 .end-results {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Monoton', cursive;
 }
 
 .choice-box {
@@ -71,7 +71,7 @@ input {
 }
 
 #blink {
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-name: blink;
     font-size: 2em;
@@ -81,38 +81,28 @@ input {
 @keyframes blink {
     0% {
         opacity: 1;
-        color: red;
+        color:#e53b99;
     }
     25%{
       opacity: 0;
     }
     50%{
       opacity: 1;
-      color:green;
+      color: #15B82B;
     }
     75% {
         opacity: 0;
-
-    }
-    76% {
-        opacity: 1;
-        color:blue;
-    }
-    86%{
-      opacity:0;
-    }
-    99% {
-        opacity: 1;
-        color:yellow;
     }
     100%{
-      opacity:0;
+      opacity:1;
+      color: #FFB800;;
     }
 }
 
 #restart {
   display: none;
   text-align: center;
+  font-family: 'Monoton', cursive;
 }
 
 #form-name {
