@@ -23,12 +23,17 @@ input {
   font-family: 'Monoton', cursive;
 }
 
+#choose {
+  color: #FCBA04;
+  font-weight: bold;
+}
+
 .choice-box {
   background-color: rgba(0, 0, 0, 0.5);
   font-family: 'Homenaje', sans-serif;
   /*text-align: center;*/
-  width: 459px;
-  height: 160px;
+  width: 470px;
+  height: 180px;
   position: absolute;
   top: 310px;
   left: 25%;

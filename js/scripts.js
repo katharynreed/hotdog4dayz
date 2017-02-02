@@ -36,7 +36,6 @@ $(document).ready(function() {
   $("#form-name").submit(function(event) {
     event.preventDefault();
     var inputtedName = $("input#name").val();
-    console.log(inputtedName);
     $("#form-name").hide();
     $("#logo").hide();
     $("#song-1").get(0).pause();
