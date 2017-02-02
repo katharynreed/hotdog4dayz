@@ -1,7 +1,5 @@
 #Hot Dog Dating Simulator
 
-[GitHub](http://github.com)
-
 Hot Dog Dating Simulator, January 30th, 2017
 
 Authors: Xia Amendolara, Jennifer Beem, Katharyn Reed, Brynna Klamkin-McCarter
