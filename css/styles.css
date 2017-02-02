@@ -121,3 +121,30 @@ input {
 /*font-family: 'Barrio', cursive;
 font-family: 'IM Fell Double Pica', serif;
 font-family: 'Dancing Script', cursive;*/
+
+
+@media screen and (min-width: 994px) {
+  .choice-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Homenaje', sans-serif;
+    /*text-align: center;*/
+    width: 459px;
+    height: 160px;
+    position: absolute;
+    top: 410px;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .choice-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Homenaje', sans-serif;
+    /*text-align: center;*/
+    width: 459px;
+    height: 160px;
+    position: absolute;
+    top: 510px;
+    left: 35%;
+  }
+}
