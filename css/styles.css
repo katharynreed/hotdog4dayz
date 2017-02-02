@@ -95,6 +95,34 @@ input {
     opacity:1;
     color: #FFB800;;
   }
+
+  #blink {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    font-size: 2em;
+    text-align: center;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color:#e53b99;
+    }
+    25%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+      color: #15B82B;
+    }
+    75% {
+        opacity: 0;
+    }
+    100%{
+      opacity:1;
+      color: #FFB800;;
+    }
 }
 
 #restart {
@@ -105,6 +133,7 @@ input {
 
 #restart-btn {
   background-color: #FF40B8;
+  font-family: 'Monoton', cursive;
 }
 
 #form-name {

@@ -8,15 +8,15 @@ function Player(name, score) {
 
 
   Player.prototype.accrue = function(score) {
-    $("#blink").show();
+    $("#blink").delay(7000).fadeIn(4000);
     if (score < 0) {
-      $("p#end-negative-show").show();
+      $("p#end-negative-show").delay(7000).fadeIn(4000);
       $("#name-display3").text(newPlayer.name);
     } else if (score < 2 && score >= 0) {
-      $("p#end-neutral-show").show();
+      $("p#end-neutral-show").delay(7000).fadeIn(4000);
       $("#name-display2").text(newPlayer.name);
     } else {
-      $("p#end-positive-show").show();
+      $("p#end-positive-show").delay(7000).fadeIn(4000);
       $("#name-display1").text(newPlayer.name);
     }
   };
@@ -66,9 +66,9 @@ $(document).ready(function() {
 
     if (tracker >= 8) {
       var playerScore = newPlayer.accrue(score);
-      $("#hot-dog-gif").hide();
+      $("#hot-dog-gif").fadeOut(4000);
       $(".choice-box").hide();
-      $("#restart").show();
+      $("#restart").delay(7000).fadeIn(4000);
 
     }
   });
