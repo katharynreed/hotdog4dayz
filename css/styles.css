@@ -1,3 +1,9 @@
+/*font-family: 'Barrio', cursive;
+font-family: 'IM Fell Double Pica', serif;
+font-family: 'Dancing Script', cursive;*/
+/*font-family: 'Courgette', cursive;*/
+
+
 body {
   background-color: black;
   font-family: 'Barrio', cursive;
@@ -5,27 +11,12 @@ body {
   color: #fff;
 }
 
-.choice-box {
-  display: none;
-}
-
-img {
-
-}
-
 input {
   color: black;
 }
-/* these are text boxes*/
-
-#stick-in-it {
-  margin: 20px;
-  font-size: 18px;
-  text-align: center;
-}
 
 .end-results {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Monoton', cursive;
 }
 
 .choice-box {
@@ -37,6 +28,7 @@ input {
   position: absolute;
   top: 310px;
   left: 25%;
+  display: none;
 }
 
 .feed-box {
@@ -50,14 +42,19 @@ input {
   left: 15%;
 }
 
-/* end of that*/
 .end-results {
   font-size: 32px;
+  font-family: 'Courgette', cursive;
 }
-
 
 .noshow {
   display: none;
+  text-align: center;
+}
+
+#stick-in-it {
+  margin: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -71,48 +68,43 @@ input {
 }
 
 #blink {
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: blink;
-    font-size: 2em;
-    text-align: center;
+  font-family: 'Monoton', cursive;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: blink;
+  font-size: 2em;
+  text-align: center;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-        color: red;
-    }
-    25%{
-      opacity: 0;
-    }
-    50%{
+  0% {
       opacity: 1;
-      color:green;
-    }
-    75% {
-        opacity: 0;
-
-    }
-    76% {
-        opacity: 1;
-        color:blue;
-    }
-    86%{
-      opacity:0;
-    }
-    99% {
-        opacity: 1;
-        color:yellow;
-    }
-    100%{
-      opacity:0;
-    }
+      color:#e53b99;
+  }
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    color: #15B82B;
+  }
+  75% {
+      opacity: 0;
+  }
+  100%{
+    opacity:1;
+    color: #FFB800;;
+  }
 }
 
 #restart {
   display: none;
   text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+#restart-btn {
+  background-color: #FF40B8;
 }
 
 #form-name {
@@ -122,14 +114,12 @@ input {
 
 #start-playing{
   background-color: #FF40B8;
+  font-family: 'Dancing Script', cursive;
+  font-size: 14px;
+
 }
 
-
-
-/*font-family: 'Barrio', cursive;
-font-family: 'IM Fell Double Pica', serif;
-font-family: 'Dancing Script', cursive;*/
-
+/*MEDIA QUERIES */
 
 @media screen and (min-width: 994px) {
 
